@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube App I</title>
+    <style>
+        #container{
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        #nav{
+            height: 30px;
+            display: flex;
+        }
+        #nav > div > img,#nav > div > a >img{
+            height: 30px;
+        }
+        #yt-img{
+            width: 70px;
+        }
+        #input{
+            padding-top: 7px;
+            width: 400px;
+            font-size: large;
+            height: 23px;
+        }
+        #search-bar{
+            flex-grow: 1;
+            width: 450px;
+            height: 30px;
+        }
+        #sbm:hover{
+            cursor : pointer;
+        }
+        .logo{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo">
+            <img src="https://cdn-icons.flaticon.com/png/512/2516/premium/2516745.png?token=exp=1634335600~hmac=c1088752ae4161e16d3b2ec4e46dcd4a" alt="">
+            <a href="">
+                <img src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500" alt="" id="yt-img">
+            </a>
+        </div>
+        <div id="search-bar">
+            <input type="text" id="input" placeholder="Search">
+            <img src="https://cdn-icons-png.flaticon.com/512/482/482631.png" alt="" id="sbm">
+        </div>
+        <div>
+            <img src="https://cdn-icons.flaticon.com/png/512/3384/premium/3384379.png?token=exp=1634335381~hmac=57f167926f271117ed37b669d8e93a54" alt="">
+            <img src="https://cdn-icons.flaticon.com/png/512/3502/premium/3502489.png?token=exp=1634335533~hmac=42ae1845a54fabf85aa97a2d8c21396b" alt="">
+        </div>
+    </nav>
+    <div id="container">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
